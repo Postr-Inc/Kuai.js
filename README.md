@@ -1,15 +1,15 @@
-# Kuai.js
-A fast simple client side history router - used in vader.js
-
-#Usage 
+# Kuai
+<b>Kuai- Means fast in Chinese(快)</b> - is a fast lightweight,simple router for SPA
 
 ```js
-import Kuai from '/src/router.js' 
-const kuai = new Kuai() 
-import Component from './test/index.js'
-kuai.get('/test', (ctx) => {
-   render(Component, document.getElementById('root'))
-})
-kuai.get('/home/:param', (ctx)=> ctx.html('<h1> hello world</h1>'))
+import Kuai from 'Kuai' 
+let kuai = new Kuai(); 
+ 
+kuai.get('/:hello', (c) => {
+     c.html(`<h1>Hello Kuai</h1`)
+ })
+kuai.use('/:hello', () => console.log('Middleware'))
 kuai.listen()
+
 ```
+ 
