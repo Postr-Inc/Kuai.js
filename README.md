@@ -1,5 +1,5 @@
 # Kuai
-<b>Kuai- Means fast in Chinese(快)</b> - is a fast lightweight,simple router for SPA
+<b>Kuai- Means fast in Chinese(快)</b> - kuai is a fast lightweight,simple router for SPA
 
 ```js
 import Kuai from 'Kuai' 
